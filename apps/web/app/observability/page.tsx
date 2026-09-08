@@ -1,4 +1,4 @@
-import { ObservabilityDashboardPage } from "../../features/observability/observability-dashboard";
+import { ObservabilityDashboardPage } from "../../features/observability/ObservabilityDashboardPage";
 
 export default function ObservabilityPage() {
   return <ObservabilityDashboardPage />;

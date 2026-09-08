@@ -49,57 +49,44 @@ class GateService:
     def _value_assessment(self, gap_id: str, payload: RunGateAssessmentRequest) -> GateAssessment:
         decision_link = (payload.decision_link or "").strip()
         motivating_count = self._count_roles(gap_id, {"MOTIVATING", "CALLS_FOR"})
-        if len(decision_link) >= 80 and motivating_count > 0:
-            grade = "A"
-            rationale = f"Decision Link가 구체적이고 연구 필요성 근거 {motivating_count}건과 연결됩니다."
-        elif len(decision_link) >= 30 or motivating_count > 0:
-            grade = "B"
-            rationale = "Decision Link 또는 연구 필요성 근거가 있으나, 결론과의 연결을 더 명확히 해야 합니다."
+        if decision_link:
+            rationale = "연구 결과를 활용할 의사결정이 기록되었습니다. 이해관계자와 활용 시점을 더 구체화해 보세요."
         else:
-            grade = "C"
-            rationale = "연구하면 무엇이 달라지는지에 대한 Decision Link가 부족합니다."
+            rationale = "연구 결과가 누구의 어떤 의사결정에 쓰일지 기록해 보세요."
 
         return GateAssessment(
             gap_id=gap_id,
             search_run_id=payload.search_run_id,
             gate_type="VALUE",
-            status="ASSESSED",
-            grade=grade,
+            status="PREPARATION_REVIEWED",
+            grade=None,
             rationale=rationale,
             inputs_json={"decisionLink": decision_link, "motivatingEvidenceCount": motivating_count},
         )
 
     def _feasibility_assessment(self, gap_id: str, payload: RunGateAssessmentRequest) -> GateAssessment:
-        resource_fields = [
+        preparation_fields = [
+            payload.decision_link,
             payload.available_data,
             payload.participants,
             payload.tools,
             payload.time_budget,
             payload.collaboration,
+            payload.notes,
         ]
-        resource_count = len([value for value in resource_fields if value and value.strip()])
+        recorded_count = len([value for value in preparation_fields if value and value.strip()])
         enabling_count = self._count_roles(gap_id, {"ENABLING"})
-
-        if resource_count >= 4 and enabling_count > 0:
-            status = "FEASIBLE"
-            rationale = f"연구자 자원 입력이 충분하고 실행 근거 {enabling_count}건이 있습니다."
-        elif payload.collaboration and payload.collaboration.strip():
-            status = "COLLAB_REQUIRED"
-            rationale = "일부 자원은 협업을 통해 보완할 수 있는 상태입니다."
-        elif resource_count >= 2:
-            status = "RESOURCE_REQUIRED"
-            rationale = "기본 자원은 있으나 데이터, 참여자, 도구, 시간 중 추가 확보가 필요합니다."
-        else:
-            status = "HOLD"
-            rationale = "실행 가능성을 판단하기 위한 연구자 자원 정보가 부족합니다."
 
         return GateAssessment(
             gap_id=gap_id,
             search_run_id=payload.search_run_id,
             gate_type="FEASIBILITY",
-            status=status,
-            rationale=rationale,
-            inputs_json={"resourceCount": resource_count, "enablingEvidenceCount": enabling_count},
+            status="PREPARATION_REVIEWED",
+            rationale=(
+                f"연구 준비 항목 {recorded_count}개가 기록되었습니다. "
+                "입력된 정보만으로 연구 수행 가능 여부를 판정하지 않습니다."
+            ),
+            inputs_json={"recordedCount": recorded_count, "enablingEvidenceCount": enabling_count},
         )
 
     def _count_roles(self, gap_id: str, role_types: set[str]) -> int:

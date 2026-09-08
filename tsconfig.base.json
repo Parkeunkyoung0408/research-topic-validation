@@ -9,9 +9,8 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
     "paths": {
-      "@research-topic-validation/contracts": ["packages/contracts/src/index.ts"]
+      "@research-topic-validation/contracts": ["./packages/contracts/src/index.ts"]
     }
   }
 }

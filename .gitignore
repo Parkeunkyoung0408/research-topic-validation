@@ -10,3 +10,7 @@ __pycache__/
 .DS_Store
 coverage/
 .pytest_cache/
+.next-dev/
+test-results/
+*.tsbuildinfo
+*.log
