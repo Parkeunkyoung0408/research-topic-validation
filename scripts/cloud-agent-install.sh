@@ -5,10 +5,16 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOCAL_BIN="${HOME}/.local/bin"
 
 ensure_path() {
-  if ! grep -qs 'export PATH="$HOME/.local/bin:$PATH"' "${HOME}/.bashrc"; then
-    printf '\n# Codex CLI and user-local binaries\nexport PATH="$HOME/.local/bin:$PATH"\n' >> "${HOME}/.bashrc"
+  if ! grep -qs 'Codex CLI and user-local binaries' "${HOME}/.bashrc"; then
+    cat >> "${HOME}/.bashrc" <<'EOF'
+
+# Codex CLI and user-local binaries
+export PATH="$HOME/.local/bin:$PATH"
+export NPM_CONFIG_PREFIX="$HOME/.local"
+EOF
   fi
   export PATH="${LOCAL_BIN}:${PATH}"
+  export NPM_CONFIG_PREFIX="${HOME}/.local"
 }
 
 install_codex() {
