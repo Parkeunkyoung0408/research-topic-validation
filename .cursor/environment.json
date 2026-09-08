@@ -1,0 +1,4 @@
+{
+  "name": "Research Topic Validation",
+  "install": "./scripts/cloud-agent-install.sh"
+}
