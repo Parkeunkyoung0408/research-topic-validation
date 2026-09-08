@@ -19,6 +19,7 @@ EOF
 
 install_codex() {
   mkdir -p "${LOCAL_BIN}"
+  npm config set prefix "${HOME}/.local" --location=user
   npm install -g @openai/codex --prefix "${HOME}/.local"
   codex --version
 }
