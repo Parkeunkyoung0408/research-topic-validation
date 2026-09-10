@@ -66,10 +66,13 @@ export function useValidationWorkspace() {
     const { gap } = await createGap(projectId, { gapText: nextTopic });
     const searchRun = await runSearch(gap.id, { query: nextTopic, limit: 10 });
     if (searchRun.sourceScope.adapterError) {
+      const detail = searchRun.sourceScope.connectionError as
+        { message?: string; errorId?: string } | undefined;
       setStatus({
         error: true,
-        message:
-          "논문 검색 서비스에 연결하지 못했습니다. 잠시 후 다시 검색해 주세요.",
+        message: detail?.message
+          ? `${detail.message}${detail.errorId ? ` 오류 번호: ${detail.errorId}` : ""}`
+          : "논문 검색 서비스에 연결하지 못했습니다. 상단에서 연결 상태를 다시 확인해 주세요.",
       });
       return;
     }

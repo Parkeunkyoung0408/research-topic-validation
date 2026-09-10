@@ -1,3 +1,4 @@
+from __future__ import annotations
 from collections import Counter
 
 from app.domain.evidence_classifier import classify_gap_evidence

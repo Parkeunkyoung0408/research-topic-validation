@@ -1,0 +1,398 @@
+[
+  {
+    "question_id": "Q01",
+    "question_version": 1,
+    "schema_version": "0.1",
+    "split": "development",
+    "language": "ko",
+    "question_type": "effect",
+    "original_text": "생성형 AI가 UX 디자이너의 아이디어 다양성에 미치는 영향",
+    "paired_question_id": "Q02",
+    "selection_origin": "ASSISTANT_PROPOSED",
+    "human_confirmed": false,
+    "fields": {
+      "population": {
+        "value": "UX 디자이너",
+        "requirement": "CORE",
+        "source_span": "UX 디자이너",
+        "origin": "EXPLICIT"
+      },
+      "intervention_or_phenomenon": {
+        "value": "생성형 AI",
+        "requirement": "CORE",
+        "source_span": "생성형 AI",
+        "origin": "EXPLICIT"
+      },
+      "comparator": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "outcome": {
+        "value": "아이디어 다양성",
+        "requirement": "CORE",
+        "source_span": "아이디어 다양성",
+        "origin": "EXPLICIT"
+      },
+      "context": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "method": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "timeframe": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "relation": {
+        "value": "생성형 AI가 UX 디자이너의 아이디어 다양성에 미치는 영향",
+        "requirement": "CORE",
+        "source_span": "생성형 AI가 UX 디자이너의 아이디어 다양성에 미치는 영향",
+        "origin": "EXPLICIT"
+      }
+    },
+    "diagnostic_query": "generative AI design ideation diversity",
+    "clarification_notes": [
+      "CORE 지정과 연구 대상 범위는 사람 검토 전 초안입니다."
+    ]
+  },
+  {
+    "question_id": "Q02",
+    "question_version": 1,
+    "schema_version": "0.1",
+    "split": "development",
+    "language": "en",
+    "question_type": "effect",
+    "original_text": "How does generative AI affect idea diversity among UX designers?",
+    "paired_question_id": "Q01",
+    "selection_origin": "ASSISTANT_PROPOSED",
+    "human_confirmed": false,
+    "fields": {
+      "population": {
+        "value": "UX designers",
+        "requirement": "CORE",
+        "source_span": "UX designers",
+        "origin": "EXPLICIT"
+      },
+      "intervention_or_phenomenon": {
+        "value": "generative AI",
+        "requirement": "CORE",
+        "source_span": "generative AI",
+        "origin": "EXPLICIT"
+      },
+      "comparator": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "outcome": {
+        "value": "idea diversity",
+        "requirement": "CORE",
+        "source_span": "idea diversity",
+        "origin": "EXPLICIT"
+      },
+      "context": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "method": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "timeframe": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "relation": {
+        "value": "How does generative AI affect idea diversity among UX designers?",
+        "requirement": "CORE",
+        "source_span": "How does generative AI affect idea diversity among UX designers?",
+        "origin": "EXPLICIT"
+      }
+    },
+    "diagnostic_query": "generative AI design ideation diversity",
+    "clarification_notes": [
+      "CORE 지정과 연구 대상 범위는 사람 검토 전 초안입니다."
+    ]
+  },
+  {
+    "question_id": "Q03",
+    "question_version": 1,
+    "schema_version": "0.1",
+    "split": "development",
+    "language": "en",
+    "question_type": "experience",
+    "original_text": "How do university students experience using ChatGPT for academic writing?",
+    "paired_question_id": null,
+    "selection_origin": "ASSISTANT_PROPOSED",
+    "human_confirmed": false,
+    "fields": {
+      "population": {
+        "value": "university students",
+        "requirement": "CORE",
+        "source_span": "university students",
+        "origin": "EXPLICIT"
+      },
+      "intervention_or_phenomenon": {
+        "value": "ChatGPT",
+        "requirement": "CORE",
+        "source_span": "ChatGPT",
+        "origin": "EXPLICIT"
+      },
+      "comparator": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "outcome": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "context": {
+        "value": "academic writing",
+        "requirement": "CORE",
+        "source_span": "academic writing",
+        "origin": "EXPLICIT"
+      },
+      "method": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "timeframe": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "relation": {
+        "value": "How do university students experience using ChatGPT for academic writing?",
+        "requirement": "CORE",
+        "source_span": "How do university students experience using ChatGPT for academic writing?",
+        "origin": "EXPLICIT"
+      }
+    },
+    "diagnostic_query": "ChatGPT university students academic writing experience",
+    "clarification_notes": [
+      "CORE 지정과 연구 대상 범위는 사람 검토 전 초안입니다."
+    ]
+  },
+  {
+    "question_id": "Q04",
+    "question_version": 1,
+    "schema_version": "0.1",
+    "split": "validation",
+    "language": "ko",
+    "question_type": "mechanism",
+    "original_text": "설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가?",
+    "paired_question_id": null,
+    "selection_origin": "ASSISTANT_PROPOSED",
+    "human_confirmed": false,
+    "fields": {
+      "population": {
+        "value": "사용자",
+        "requirement": "CORE",
+        "source_span": "사용자",
+        "origin": "EXPLICIT"
+      },
+      "intervention_or_phenomenon": {
+        "value": "설명 가능한 AI의 설명 방식",
+        "requirement": "CORE",
+        "source_span": "설명 가능한 AI의 설명 방식",
+        "origin": "EXPLICIT"
+      },
+      "comparator": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "outcome": {
+        "value": "신뢰",
+        "requirement": "CORE",
+        "source_span": "신뢰",
+        "origin": "EXPLICIT"
+      },
+      "context": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "method": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "timeframe": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "relation": {
+        "value": "설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가?",
+        "requirement": "CORE",
+        "source_span": "설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가?",
+        "origin": "EXPLICIT"
+      }
+    },
+    "diagnostic_query": "explainable AI explanation user trust",
+    "clarification_notes": [
+      "CORE 지정과 연구 대상 범위는 사람 검토 전 초안입니다."
+    ]
+  },
+  {
+    "question_id": "Q05",
+    "question_version": 1,
+    "schema_version": "0.1",
+    "split": "validation",
+    "language": "en",
+    "question_type": "effect",
+    "original_text": "Does retrieval augmented generation reduce hallucinations compared with language models without retrieval?",
+    "paired_question_id": null,
+    "selection_origin": "ASSISTANT_PROPOSED",
+    "human_confirmed": false,
+    "fields": {
+      "population": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "intervention_or_phenomenon": {
+        "value": "retrieval augmented generation",
+        "requirement": "CORE",
+        "source_span": "retrieval augmented generation",
+        "origin": "EXPLICIT"
+      },
+      "comparator": {
+        "value": "language models without retrieval",
+        "requirement": "CORE",
+        "source_span": "language models without retrieval",
+        "origin": "EXPLICIT"
+      },
+      "outcome": {
+        "value": "hallucinations",
+        "requirement": "CORE",
+        "source_span": "hallucinations",
+        "origin": "EXPLICIT"
+      },
+      "context": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "method": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "timeframe": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "relation": {
+        "value": "Does retrieval augmented generation reduce hallucinations compared with language models without retrieval?",
+        "requirement": "CORE",
+        "source_span": "Does retrieval augmented generation reduce hallucinations compared with language models without retrieval?",
+        "origin": "EXPLICIT"
+      }
+    },
+    "diagnostic_query": "retrieval augmented generation hallucinations",
+    "clarification_notes": [
+      "CORE 지정과 연구 대상 범위는 사람 검토 전 초안입니다."
+    ]
+  },
+  {
+    "question_id": "Q06",
+    "question_version": 1,
+    "schema_version": "0.1",
+    "split": "validation",
+    "language": "ko",
+    "question_type": "effect",
+    "original_text": "원격 근무가 소프트웨어 개발자의 생산성에 미치는 영향",
+    "paired_question_id": null,
+    "selection_origin": "ASSISTANT_PROPOSED",
+    "human_confirmed": false,
+    "fields": {
+      "population": {
+        "value": "소프트웨어 개발자",
+        "requirement": "CORE",
+        "source_span": "소프트웨어 개발자",
+        "origin": "EXPLICIT"
+      },
+      "intervention_or_phenomenon": {
+        "value": "원격 근무",
+        "requirement": "CORE",
+        "source_span": "원격 근무",
+        "origin": "EXPLICIT"
+      },
+      "comparator": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "outcome": {
+        "value": "생산성",
+        "requirement": "CORE",
+        "source_span": "생산성",
+        "origin": "EXPLICIT"
+      },
+      "context": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "method": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "timeframe": {
+        "value": null,
+        "requirement": "UNSPECIFIED",
+        "source_span": null,
+        "origin": null
+      },
+      "relation": {
+        "value": "원격 근무가 소프트웨어 개발자의 생산성에 미치는 영향",
+        "requirement": "CORE",
+        "source_span": "원격 근무가 소프트웨어 개발자의 생산성에 미치는 영향",
+        "origin": "EXPLICIT"
+      }
+    },
+    "diagnostic_query": "remote work software developer productivity",
+    "clarification_notes": [
+      "CORE 지정과 연구 대상 범위는 사람 검토 전 초안입니다."
+    ]
+  }
+]

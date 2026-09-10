@@ -1,3 +1,4 @@
+from __future__ import annotations
 from fastapi import APIRouter, HTTPException, status
 
 from app.repositories.in_memory import store

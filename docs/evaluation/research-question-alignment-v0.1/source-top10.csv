@@ -1,0 +1,91 @@
+﻿question_id,search_run_id,arm,paper_id,title,source_rank,source_score
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4400578758,Generative AI enhances individual creativity but reduces the collective diversity of novel content,1,589.7374
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4383679937,"Design Ideation with AI - Sketching, Thinking and Talking with Generative Machine Learning Models",2,381.336
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4401533174,The Crowdless Future? Generative AI and Creative Problem-Solving,3,333.6024
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4220962633,Investigating Explainability of Generative AI for Code through Scenario-based Design,4,328.54843
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4409885395,The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers,5,303.43857
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4387628939,DesignAID: Using Generative AI and Semantic Diversity for Design Inspiration,6,290.8962
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4392094166,How organizations can innovate with generative AI,7,263.13156
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4390813588,Comparing the Ideation Quality of Humans With Generative Artificial Intelligence,8,259.01788
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4390050383,The Uneven Impact of Generative AI on Entrepreneurial Performance,9,249.29544
+Q01,Q01-diagnostic-v01,diagnostic,https://openalex.org/W4392239564,Human-AI collaboration patterns in AI-assisted academic writing,10,244.80003
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W2981731882,"Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",1,882.9221
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W4317748910,Artificial Intelligence Risk Management Framework (AI RMF 1.0),2,310.28693
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W4401955591,Integrating Generative AI and IoT for Sustainable Smart Tourism Destinations,3,226.42697
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W4220747294,CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities,4,216.54489
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W4391361874,Enhancing Work Productivity through Generative Artificial Intelligence: A Comprehensive Literature Review,5,213.07709
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W4387331350,Understanding Design Collaboration Between Designers and Artificial Intelligence: A Systematic Literature Review,6,203.31908
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W3208274075,"‘Just hit a button!’ – fashion 4.0 designers as cyborgs, experimenting and designing with generative algorithms",7,193.70241
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W4388007985,The Participatory Turn in AI Design: Theoretical Foundations and the Current State of Practice,8,169.07652
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W3157327767,Generative Adversarial Networks–Enabled Human–Artificial Intelligence Collaborative Applications for Creative and Design Industries: A Systematic Review of Current Approaches and Trends,9,164.01837
+Q02,Q02-punctuation-v01,punctuation,https://openalex.org/W4292289324,Human-in-the-loop machine learning: a state of the art,10,154.66335
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4400578758,Generative AI enhances individual creativity but reduces the collective diversity of novel content,1,589.7374
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4383679937,"Design Ideation with AI - Sketching, Thinking and Talking with Generative Machine Learning Models",2,381.336
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4401533174,The Crowdless Future? Generative AI and Creative Problem-Solving,3,333.6024
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4220962633,Investigating Explainability of Generative AI for Code through Scenario-based Design,4,328.54843
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4409885395,The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers,5,303.43857
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4387628939,DesignAID: Using Generative AI and Semantic Diversity for Design Inspiration,6,290.8962
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4392094166,How organizations can innovate with generative AI,7,263.13156
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4390813588,Comparing the Ideation Quality of Humans With Generative Artificial Intelligence,8,259.01788
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4390050383,The Uneven Impact of Generative AI on Entrepreneurial Performance,9,249.29544
+Q02,Q02-diagnostic-v01,diagnostic,https://openalex.org/W4392239564,Human-AI collaboration patterns in AI-assisted academic writing,10,244.80003
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4323655724,ChatGPT for good? On opportunities and challenges of large language models for education,1,1331.4495
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4324046518,Chatting and cheating: Ensuring academic integrity in the era of ChatGPT,2,1120.5118
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4327918021,ChatGPT in higher education: Considerations for academic integrity and student learning,3,779.50586
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4319083882,ChatGPT: five priorities for research,4,745.516
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4366420437,What Is the Impact of ChatGPT on Education? A Rapid Review of the Literature,5,743.48035
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4360620450,"Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",6,708.9884
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4317910584,ChatGPT: Bullshit spewer or the end of traditional assessments in higher education?,7,667.9052
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4389793309,Enhancing academic writing skills and motivation: assessing the efficacy of ChatGPT in AI-assisted language learning for EFL students,8,662.65814
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4321499901,What if the devil is my guardian angel: ChatGPT as a case study of using chatbots in education,9,653.29095
+Q03,Q03-punctuation-v01,punctuation,https://openalex.org/W4327518740,From human writing to artificial intelligence generated text: examining the prospects and potential threats of ChatGPT in academic writing,10,638.4954
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4323655724,ChatGPT for good? On opportunities and challenges of large language models for education,1,1211.3278
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4324046518,Chatting and cheating: Ensuring academic integrity in the era of ChatGPT,2,1071.7087
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4327918021,ChatGPT in higher education: Considerations for academic integrity and student learning,3,744.70184
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4366420437,What Is the Impact of ChatGPT on Education? A Rapid Review of the Literature,4,684.3778
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4319083882,ChatGPT: five priorities for research,5,681.2308
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4360620450,"Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",6,657.55896
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4317910584,ChatGPT: Bullshit spewer or the end of traditional assessments in higher education?,7,652.9785
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4389793309,Enhancing academic writing skills and motivation: assessing the efficacy of ChatGPT in AI-assisted language learning for EFL students,8,646.9327
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4327518740,From human writing to artificial intelligence generated text: examining the prospects and potential threats of ChatGPT in academic writing,9,611.1652
+Q03,Q03-diagnostic-v01,diagnostic,https://openalex.org/W4321605350,Academic Integrity considerations of AI Large Language Models in the post-pandemic era: ChatGPT and beyond,10,544.7603
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W4319321305,"Measures for explainable AI: Explanation goodness, user satisfaction, mental models, curiosity, trust, and human-AI performance",1,1433.2548
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W3093033010,"The effects of explainability and causability on perception, trust, and acceptance: Implications for explainable AI",2,1364.1946
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W2981731882,"Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",3,1187.1165
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W2954503794,DARPA's Explainable Artificial Intelligence Program,4,905.6118
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W4366262984,Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence,5,835.3578
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W2616247523,Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization,6,669.61694
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W2962772482,A survey of methods for explaining black box models,7,651.5463
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W4294559022,"Explainable AI (XAI): Core Ideas, Techniques, and Solutions",8,590.2957
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W2999765337,Questioning the AI: Informing Design Practices for Explainable AI User Experiences,9,588.6076
+Q04,Q04-diagnostic-v01,diagnostic,https://openalex.org/W3119394424,Expanding Explainability: Towards Social Transparency in AI systems,10,588.4896
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4389984066,Retrieval-Augmented Generation for Large Language Models: A Survey,1,1282.2466
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4401857375,A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models,2,1004.2888
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W3155807546,Retrieval Augmentation Reduces Hallucination in Conversation,3,1001.93463
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4384071683,Large language models encode clinical knowledge,4,856.87225
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4391221150,Almanac — Retrieval-Augmented Language Models for Clinical Medicine,5,843.242
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4224308101,PaLM: Scaling Language Modeling with Pathways,6,681.2487
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4389518671,Query Rewriting in Retrieval-Augmented Large Language Models,7,655.25757
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4389520468,Enhancing Retrieval-Augmented Large Language Models with Iterative Retrieval-Generation Synergy,8,636.9179
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4317898419,Improving the Domain Adaptation of Retrieval Augmented Generation (RAG) Models for Open Domain Question Answering,9,605.9578
+Q05,Q05-punctuation-v01,punctuation,https://openalex.org/W4362515116,A Survey of Large Language Models,10,600.058
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4389984066,Retrieval-Augmented Generation for Large Language Models: A Survey,1,945.1876
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4401042735,Reducing hallucination in structured outputs via Retrieval-Augmented Generation,2,795.6404
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4401857375,A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models,3,769.1131
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4393147129,Benchmarking Large Language Models in Retrieval-Augmented Generation,4,717.8429
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W3155807546,Retrieval Augmentation Reduces Hallucination in Conversation,5,599.666
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4389519118,Active Retrieval Augmented Generation,6,593.9506
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4402670290,Benchmarking Retrieval-Augmented Generation for Medicine,7,587.9785
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4404783652,RAG-HAT: A Hallucination-Aware Tuning Pipeline for LLM in Retrieval-Augmented Generation,8,579.09094
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4411630045,RAGAs: Automated Evaluation of Retrieval Augmented Generation,9,560.40845
+Q05,Q05-diagnostic-v01,diagnostic,https://openalex.org/W4399154003,Hallucination Reduction in Large Language Models with Retrieval-Augmented Generation Using Wikipedia Knowledge,10,519.5927
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W2160697532,Bioconductor: open software development for computational biology and bioinformatics,1,974.49146
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W1984792953,Object based image analysis for remote sensing,2,638.76373
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W1998943389,Unmanned aerial systems for photogrammetry and remote sensing: A review,3,491.52966
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W2045571829,A field study of the software design process for large systems,4,422.38654
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W3081249378,A Tale of Two Cities: Software Developers Working from Home during the COVID-19 Pandemic,5,418.2628
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W3135708166,The SPACE of Developer Productivity,6,329.1144
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W3082766779,Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review,7,275.4064
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W2134295053,"Internet of Things: A Survey on Enabling Technologies, Protocols, and Applications",8,272.3798
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W2067453331,A Survey on Software-Defined Networking,9,258.4115
+Q06,Q06-diagnostic-v01,diagnostic,https://openalex.org/W4200462148,Changes in perceived productivity of software engineers during COVID-19 pandemic: The voice of evidence,10,258.14676

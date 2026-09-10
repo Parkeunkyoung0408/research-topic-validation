@@ -42,6 +42,79 @@
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
+.search-connection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #334155;
+}
+.search-connection--ready {
+  background: #effaf3;
+  border-color: #a8d9b8;
+  color: #166534;
+}
+.search-connection--error {
+  background: #fff5f5;
+  border-color: #edb5b5;
+  color: #9f3030;
+}
+.search-connection--stale {
+  background: #fff9ec;
+  border-color: #e5cc95;
+  color: #80520c;
+}
+.search-connection__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+.search-connection__icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 28px;
+  height: 28px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-weight: 800;
+}
+.search-connection--ready .search-connection__icon {
+  background: #166534;
+  color: white;
+  border-color: #166534;
+}
+.search-connection__text { min-width: 0; overflow-wrap: anywhere; }
+.search-connection__title { display: block; font-size: 16px; line-height: 1.6; }
+.search-connection__description { margin: 4px 0 0; font-size: 13px; line-height: 1.6; }
+.search-connection__time { display: block; margin-top: 6px; font-size: 12px; }
+.search-connection__action {
+  flex-shrink: 0;
+  padding: 9px 12px;
+  min-height: 40px;
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.search-connection__action:hover:not(:disabled) { background: #ffffffa6; }
+.search-connection__action:disabled { opacity: 0.6; cursor: wait; }
+.search-connection__action:focus-visible,
+.search-connection__details summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.search-connection__details { margin-top: 8px; font-size: 12px; }
+.search-connection__details summary { cursor: pointer; }
+@media (max-width: 600px) {
+  .search-connection { align-items: stretch; flex-direction: column; gap: 12px; padding: 16px; }
+  .search-connection__action { align-self: flex-start; }
+}
+
 .topic-entry {
   max-width: 720px;
   margin: 64px auto;

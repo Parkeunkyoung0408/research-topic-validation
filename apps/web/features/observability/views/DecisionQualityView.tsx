@@ -1,16 +1,17 @@
 import type { DecisionQualityItem } from "@research-topic-validation/contracts";
+import { localizeSystemText } from "../labels";
 
 const gateLabels: Record<DecisionQualityItem["gateType"], string> = {
-  EXISTENCE: "Existence",
-  VALUE: "Value",
-  FEASIBILITY: "Feasibility",
+  EXISTENCE: "선행연구 중복 여부",
+  VALUE: "연구 가치",
+  FEASIBILITY: "실행 가능성",
 };
 const decisionLabels: Record<string, string> = {
-  PROCEED: "PROCEED",
-  HOLD: "HOLD",
-  REFRAME: "MODIFY",
-  DIFFERENTIATE: "MODIFY",
-  REJECT: "REJECT",
+  PROCEED: "진행",
+  HOLD: "보류",
+  REFRAME: "질문 재구성",
+  DIFFERENTIATE: "차별화",
+  REJECT: "중단",
 };
 
 export function DecisionQualityView({
@@ -26,18 +27,18 @@ export function DecisionQualityView({
           key={`${item.gateType}-${item.aiAssessment}`}
         >
           <h3>{gateLabels[item.gateType]}</h3>
-          <p>{item.aiAssessment}</p>
+          <p>{localizeSystemText(item.aiAssessment)}</p>
           <div className="meta">
-            <span>근거 Evidence {item.evidenceIds.length}건</span>
+            <span>연결된 근거 {item.evidenceIds.length}건</span>
             <span>
-              Researcher Decision:{" "}
+              연구자 결정:{" "}
               {item.researcherDecision
                 ? (decisionLabels[item.researcherDecision] ??
                   item.researcherDecision)
                 : "미기록"}
             </span>
             <span>
-              Override:{" "}
+              자동 판단 변경:{" "}
               {item.researcherOverride == null
                 ? "미검증"
                 : item.researcherOverride
@@ -48,7 +49,7 @@ export function DecisionQualityView({
         </section>
       ))}
       {!items.length ? (
-        <div className="empty">Gate Assessment 데이터가 없습니다.</div>
+        <div className="empty">저장된 판단 기록이 없습니다.</div>
       ) : null}
     </div>
   );

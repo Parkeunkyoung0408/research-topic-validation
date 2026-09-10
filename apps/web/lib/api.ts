@@ -17,6 +17,21 @@ import type {
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000";
 
+export type SearchConnectionStatus = {
+  status: "checking" | "available" | "unavailable";
+  message: string;
+  code?: string | null;
+  errorId?: string | null;
+  checkedAt?: string | null;
+};
+
+export function getSearchConnection(check = false) {
+  return request<SearchConnectionStatus>(
+    check ? "/health/search/check" : "/health/search",
+    { method: check ? "POST" : "GET", cache: "no-store" },
+  );
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${path}`, {
     ...init,

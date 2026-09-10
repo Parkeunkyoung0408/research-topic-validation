@@ -33,8 +33,8 @@ export function AnnotationControls({
           )
         }
       >
-        <option value="RELEVANT">Relevant</option>
-        <option value="NOT_RELEVANT">Not Relevant</option>
+        <option value="RELEVANT">관련 있음</option>
+        <option value="NOT_RELEVANT">관련 없음</option>
       </select>
       <select
         aria-label="근거 관계"
@@ -46,9 +46,9 @@ export function AnnotationControls({
           )
         }
       >
-        <option value="COUNTER_EVIDENCE">Counter Evidence</option>
-        <option value="SUPPORTING">Supporting</option>
-        <option value="OTHER">Other</option>
+        <option value="COUNTER_EVIDENCE">연구 공백에 대한 반대 근거</option>
+        <option value="SUPPORTING">연구 필요성을 뒷받침</option>
+        <option value="OTHER">기타</option>
       </select>
       <button
         className="button secondary-button"
@@ -56,7 +56,7 @@ export function AnnotationControls({
         disabled={isPending}
         onClick={handleSave}
       >
-        Annotation 저장
+        평가 저장
       </button>
     </div>
   );

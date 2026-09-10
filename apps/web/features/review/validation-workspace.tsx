@@ -4,6 +4,7 @@ import { useValidationWorkspace } from "./hooks/useValidationWorkspace";
 import { TopicEntry } from "./components/TopicEntry";
 import { ReviewResults } from "./components/ReviewResults";
 import { NextActions } from "./components/NextActions";
+import { SearchConnectionBanner } from "../shared/SearchConnectionBanner";
 
 export function ValidationWorkspace() {
   const workspace = useValidationWorkspace();
@@ -22,6 +23,7 @@ export function ValidationWorkspace() {
         ) : null}
       </header>
       <div className="research-content">
+        <SearchConnectionBanner />
         {!workspace.result && workspace.status.message ? (
           <p
             role={workspace.status.error ? "alert" : "status"}

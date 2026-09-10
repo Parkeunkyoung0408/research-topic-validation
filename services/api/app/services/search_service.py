@@ -1,4 +1,6 @@
+from __future__ import annotations
 from datetime import date
+from time import monotonic
 
 import httpx
 
@@ -8,6 +10,7 @@ from app.repositories.in_memory import InMemoryStore
 from app.schemas.requests import RunSearchRequest
 from app.schemas.responses import PaperResponse, SearchResultResponse, SearchRunResponse
 from app.services.evidence_service import EvidenceService
+from app.services.search_connection import search_connection
 
 
 class SearchService:
@@ -35,17 +38,21 @@ class SearchService:
             "expansion": "PENDING",
         }
 
+        started = monotonic()
+        connection_error = None
         try:
             papers = await self.adapter.search(payload.query, payload.limit)
             adapter_error = None
-        except httpx.HTTPError as exc:
+            search_connection.record(None, operation="search", duration_ms=int((monotonic() - started) * 1000))
+        except (httpx.HTTPError, ValueError, TypeError, KeyError) as exc:
             papers = []
-            adapter_error = str(exc)
+            connection_error = search_connection.record(exc, operation="search", duration_ms=int((monotonic() - started) * 1000))
+            adapter_error = connection_error["message"]
 
         search_run = self.repository.add_search_run(
             SearchRun(
                 gap_id=gap_id,
-                source_scope={**source_scope, "adapterError": adapter_error},
+                source_scope={**source_scope, "adapterError": adapter_error, "connectionError": connection_error},
                 query_snapshot=query_snapshot,
                 search_budget={"limit": payload.limit},
                 model_versions={"openalexAdapter": "0.1.0"},

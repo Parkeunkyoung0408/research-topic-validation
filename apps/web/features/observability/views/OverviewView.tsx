@@ -1,6 +1,7 @@
 import type { ObservabilityDashboard } from "@research-topic-validation/contracts";
 import { MetricCard } from "../components/MetricCard";
 import { StatusBadge } from "../components/StatusBadge";
+import { localizeSystemText } from "../labels";
 
 export function OverviewView({
   dashboard,
@@ -16,24 +17,24 @@ export function OverviewView({
       </div>
       <div className="quality-strip">
         <QualityStatus
-          title="Search"
+          title="검색 기록"
           status={dashboard.searchQuality.originalQuery ? "로그 있음" : "대기"}
         />
         <QualityStatus
-          title="Evidence"
+          title="논문 근거"
           status={`${dashboard.evidenceQuality.length}건`}
         />
         <QualityStatus
-          title="Decision"
+          title="판단 기록"
           status={`${dashboard.decisionQuality.length}건`}
         />
       </div>
       <section className="observability-card">
-        <h3>Evaluation Layer Interface</h3>
+        <h3>아직 계산하지 않는 품질 지표</h3>
         <div className="metric-list">
           {dashboard.unavailableMetrics.map((metric) => (
             <div className="coverage-row" key={metric.label}>
-              <span>{metric.label}</span>
+              <span>{localizeSystemText(metric.label)}</span>
               <span>{metric.value ?? "값 없음"}</span>
               <StatusBadge value={metric.status} />
             </div>

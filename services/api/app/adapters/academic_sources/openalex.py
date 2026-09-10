@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import Any
 
 import httpx
@@ -19,6 +20,9 @@ class OpenAlexAdapter(AcademicSourceAdapter):
             response = await client.get(f"{self.base_url}/works", params=params)
             response.raise_for_status()
             payload = response.json()
+
+        if not isinstance(payload, dict) or not isinstance(payload.get("results"), list):
+            raise ValueError("Invalid OpenAlex results schema")
 
         return [self._normalize_work(work) for work in payload.get("results", [])]
 

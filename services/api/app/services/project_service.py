@@ -1,3 +1,4 @@
+from __future__ import annotations
 from app.domain.gap_structuring import infer_initial_conditions
 from app.domain.models import GapCondition, GapHypothesis, Project
 from app.repositories.in_memory import InMemoryStore

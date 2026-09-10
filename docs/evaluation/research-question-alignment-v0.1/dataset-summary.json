@@ -1,0 +1,10 @@
+{
+  "search_runs": 16,
+  "candidate_occurrences_all_arms": 450,
+  "unique_papers_all_arms": 324,
+  "review_question_paper_pairs": 300,
+  "review_unique_papers": 246,
+  "field_review_rows": 1200,
+  "review_pairs_missing_abstract": 19,
+  "human_completed_reviews": 0
+}

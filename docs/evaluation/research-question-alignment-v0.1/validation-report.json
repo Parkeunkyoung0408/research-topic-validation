@@ -1,0 +1,13 @@
+{
+  "checks_passed": [
+    "question source spans match original text",
+    "all 16 raw response hashes match",
+    "candidate counts and original ordering preserved",
+    "300 unique review IDs join both review tables and key",
+    "human judgments remain blank",
+    "review tables exclude scores ranks arms and splits",
+    "all local Markdown links resolve"
+  ],
+  "human_evaluation_completed": false,
+  "application_code_changed": false
+}

@@ -5,6 +5,7 @@ import type {
 } from "@research-topic-validation/contracts";
 import { AnnotationControls } from "../components/AnnotationControls";
 import { StatusBadge } from "../components/StatusBadge";
+import { localizeSystemText } from "../labels";
 
 type EvaluationDatasetViewProps = {
   dashboard: ObservabilityDashboard;
@@ -29,13 +30,15 @@ export function EvaluationDatasetView({
   return (
     <div className="observability-stack">
       <section className="observability-card">
-        <h3>Gold Set 준비 상태</h3>
+        <h3>정답 평가 자료 준비 상태</h3>
         <p className="small-text">
-          {dashboard.evaluationDataset.note ??
-            "Gold Set은 아직 구축되지 않았습니다."}
+          {localizeSystemText(
+            dashboard.evaluationDataset.note ??
+              "정답 평가 자료는 아직 구축되지 않았습니다.",
+          )}
         </p>
         <p className="small-text">
-          저장된 annotation {dashboard.evaluationDataset.annotations.length}건
+          저장된 평가 기록 {dashboard.evaluationDataset.annotations.length}건
         </p>
       </section>
       {dashboard.evidenceQuality.map((item) => (

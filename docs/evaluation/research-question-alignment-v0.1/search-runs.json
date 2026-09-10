@@ -1,0 +1,382 @@
+[
+  {
+    "search_run_id": "Q01-baseline-v01",
+    "question_id": "Q01",
+    "question_version": 1,
+    "arm": "baseline",
+    "query": "생성형 AI가 UX 디자이너의 아이디어 다양성에 미치는 영향",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "생성형 AI가 UX 디자이너의 아이디어 다양성에 미치는 영향",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS_EMPTY",
+    "error": null,
+    "upstream_total_count": 0,
+    "returned_count": 0,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:03:28.486518+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q01-baseline.json",
+    "sha256": "7779b7b98a00d0e429eba5b85af8041f3d9c4d33795ec7a03670320b0c783677"
+  },
+  {
+    "search_run_id": "Q01-diagnostic-v01",
+    "question_id": "Q01",
+    "question_version": 1,
+    "arm": "diagnostic",
+    "query": "generative AI design ideation diversity",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "generative AI design ideation diversity",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 6470,
+    "returned_count": 50,
+    "missing_abstract_count": 1,
+    "response_saved_at_utc": "2026-09-09T14:04:16.861022+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q01-diagnostic.json",
+    "sha256": "1ea18371a9cf6bd5c46e86d499c7a2fb9b0d7b09c6e05becb1fcb6fb6ebf8f1f"
+  },
+  {
+    "search_run_id": "Q02-baseline-v01",
+    "question_id": "Q02",
+    "question_version": 1,
+    "arm": "baseline",
+    "query": "How does generative AI affect idea diversity among UX designers?",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "How does generative AI affect idea diversity among UX designers?",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 400,
+    "status": "REQUEST_REJECTED",
+    "error": {
+      "error": "Invalid query parameters error.",
+      "message": "Wildcards (* or ?) require exact (no-stem) search. The default search is stemmed, so the literal text before the wildcard is removed when the work is indexed and the search returns wrong results. Use the search.exact= parameter instead (or the default.search.exact filter), e.g. search.exact=How does generative AI affect idea diversity among UX designers?."
+    },
+    "upstream_total_count": null,
+    "returned_count": 0,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:03:29.270447+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q02-baseline.json",
+    "sha256": "da04ba28de1b9117c4f583431a20a9e86c1c33cb03c775791713a2e539ad9ff6"
+  },
+  {
+    "search_run_id": "Q02-punctuation-v01",
+    "question_id": "Q02",
+    "question_version": 1,
+    "arm": "punctuation",
+    "query": "How does generative AI affect idea diversity among UX designers",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "How does generative AI affect idea diversity among UX designers",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 942,
+    "returned_count": 50,
+    "missing_abstract_count": 2,
+    "response_saved_at_utc": "2026-09-09T14:04:05.976563+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q02-punctuation.json",
+    "sha256": "d10641bbdd341ef4d8e878d20f84754b9f51cf8fe41da0eaf258666828c44c37"
+  },
+  {
+    "search_run_id": "Q02-diagnostic-v01",
+    "question_id": "Q02",
+    "question_version": 1,
+    "arm": "diagnostic",
+    "query": "generative AI design ideation diversity",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "generative AI design ideation diversity",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 6470,
+    "returned_count": 50,
+    "missing_abstract_count": 1,
+    "response_saved_at_utc": "2026-09-09T14:04:17.740036+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q02-diagnostic.json",
+    "sha256": "9b74a686ce90a59c60b952fd420f12aa58907068978ee13ef559d6c151566294"
+  },
+  {
+    "search_run_id": "Q03-baseline-v01",
+    "question_id": "Q03",
+    "question_version": 1,
+    "arm": "baseline",
+    "query": "How do university students experience using ChatGPT for academic writing?",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "How do university students experience using ChatGPT for academic writing?",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 400,
+    "status": "REQUEST_REJECTED",
+    "error": {
+      "error": "Invalid query parameters error.",
+      "message": "Wildcards (* or ?) require exact (no-stem) search. The default search is stemmed, so the literal text before the wildcard is removed when the work is indexed and the search returns wrong results. Use the search.exact= parameter instead (or the default.search.exact filter), e.g. search.exact=How do university students experience using ChatGPT for academic writing?."
+    },
+    "upstream_total_count": null,
+    "returned_count": 0,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:03:32.261242+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q03-baseline.json",
+    "sha256": "a12e1f50a6d3d42b52e0c207f5037d209aefc0189d764a4c711df86ca9b53850"
+  },
+  {
+    "search_run_id": "Q03-punctuation-v01",
+    "question_id": "Q03",
+    "question_version": 1,
+    "arm": "punctuation",
+    "query": "How do university students experience using ChatGPT for academic writing",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "How do university students experience using ChatGPT for academic writing",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 38301,
+    "returned_count": 50,
+    "missing_abstract_count": 2,
+    "response_saved_at_utc": "2026-09-09T14:04:02.984042+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q03-punctuation.json",
+    "sha256": "f78b9e8afaa7925b0422aba8647b9ae9ccf514395264458c3eb0bc1d956e5e5d"
+  },
+  {
+    "search_run_id": "Q03-diagnostic-v01",
+    "question_id": "Q03",
+    "question_version": 1,
+    "arm": "diagnostic",
+    "query": "ChatGPT university students academic writing experience",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "ChatGPT university students academic writing experience",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 41834,
+    "returned_count": 50,
+    "missing_abstract_count": 2,
+    "response_saved_at_utc": "2026-09-09T14:04:23.270052+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q03-diagnostic.json",
+    "sha256": "6a452bacbd3d71c6bc26e38623dcae8547f4c7bc33bb2cd6bb040dc4ef4588af"
+  },
+  {
+    "search_run_id": "Q04-baseline-v01",
+    "question_id": "Q04",
+    "question_version": 1,
+    "arm": "baseline",
+    "query": "설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가?",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가?",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 400,
+    "status": "REQUEST_REJECTED",
+    "error": {
+      "error": "Invalid query parameters error.",
+      "message": "Wildcards (* or ?) require exact (no-stem) search. The default search is stemmed, so the literal text before the wildcard is removed when the work is indexed and the search returns wrong results. Use the search.exact= parameter instead (or the default.search.exact filter), e.g. search.exact=설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가?."
+    },
+    "upstream_total_count": null,
+    "returned_count": 0,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:03:33.365975+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q04-baseline.json",
+    "sha256": "12d1cdfd0dc0bcd36fa69fa7b8e378524651a3cbf4c006061594a3ff9a681db8"
+  },
+  {
+    "search_run_id": "Q04-punctuation-v01",
+    "question_id": "Q04",
+    "question_version": 1,
+    "arm": "punctuation",
+    "query": "설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "설명 가능한 AI의 설명 방식은 사용자의 신뢰에 어떻게 영향을 미치는가",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS_EMPTY",
+    "error": null,
+    "upstream_total_count": 0,
+    "returned_count": 0,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:04:10.065148+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q04-punctuation.json",
+    "sha256": "fa981726d714fdd0fcf3a574a8c18d136a6ceecb2e15adac91d9c4fca747dc9a"
+  },
+  {
+    "search_run_id": "Q04-diagnostic-v01",
+    "question_id": "Q04",
+    "question_version": 1,
+    "arm": "diagnostic",
+    "query": "explainable AI explanation user trust",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "explainable AI explanation user trust",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 119474,
+    "returned_count": 50,
+    "missing_abstract_count": 6,
+    "response_saved_at_utc": "2026-09-09T14:04:22.175210+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q04-diagnostic.json",
+    "sha256": "60e5deac0a8ad017436879ddd08a70bb59e22da988b5c297251a749712569e55"
+  },
+  {
+    "search_run_id": "Q05-baseline-v01",
+    "question_id": "Q05",
+    "question_version": 1,
+    "arm": "baseline",
+    "query": "Does retrieval augmented generation reduce hallucinations compared with language models without retrieval?",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "Does retrieval augmented generation reduce hallucinations compared with language models without retrieval?",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 400,
+    "status": "REQUEST_REJECTED",
+    "error": {
+      "error": "Invalid query parameters error.",
+      "message": "Wildcards (* or ?) require exact (no-stem) search. The default search is stemmed, so the literal text before the wildcard is removed when the work is indexed and the search returns wrong results. Use the search.exact= parameter instead (or the default.search.exact filter), e.g. search.exact=Does retrieval augmented generation reduce hallucinations compared with language models without retrieval?."
+    },
+    "upstream_total_count": null,
+    "returned_count": 0,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:03:35.591291+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q05-baseline.json",
+    "sha256": "331b2c2f7b4d1467a5aed980b3e3d0eea0eb26acee58c8832b6d4c94333f76c1"
+  },
+  {
+    "search_run_id": "Q05-punctuation-v01",
+    "question_id": "Q05",
+    "question_version": 1,
+    "arm": "punctuation",
+    "query": "Does retrieval augmented generation reduce hallucinations compared with language models without retrieval",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "Does retrieval augmented generation reduce hallucinations compared with language models without retrieval",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 22137,
+    "returned_count": 50,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:04:11.570546+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q05-punctuation.json",
+    "sha256": "2beb78a7b420c106270c2adda46859926e72cd855e23d08b51254a9611eeea11"
+  },
+  {
+    "search_run_id": "Q05-diagnostic-v01",
+    "question_id": "Q05",
+    "question_version": 1,
+    "arm": "diagnostic",
+    "query": "retrieval augmented generation hallucinations",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "retrieval augmented generation hallucinations",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 33417,
+    "returned_count": 50,
+    "missing_abstract_count": 2,
+    "response_saved_at_utc": "2026-09-09T14:04:28.856751+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q05-diagnostic.json",
+    "sha256": "1e5e352a2d0c383806ae5011ae37c20f3a35d9467ef1befb09572022b487d130"
+  },
+  {
+    "search_run_id": "Q06-baseline-v01",
+    "question_id": "Q06",
+    "question_version": 1,
+    "arm": "baseline",
+    "query": "원격 근무가 소프트웨어 개발자의 생산성에 미치는 영향",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "원격 근무가 소프트웨어 개발자의 생산성에 미치는 영향",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS_EMPTY",
+    "error": null,
+    "upstream_total_count": 0,
+    "returned_count": 0,
+    "missing_abstract_count": 0,
+    "response_saved_at_utc": "2026-09-09T14:03:36.734262+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q06-baseline.json",
+    "sha256": "bd09b1748d27349221658bcc584cc281743417d32666e55e59ff1d4b09085074"
+  },
+  {
+    "search_run_id": "Q06-diagnostic-v01",
+    "question_id": "Q06",
+    "question_version": 1,
+    "arm": "diagnostic",
+    "query": "remote work software developer productivity",
+    "endpoint": "https://api.openalex.org/works",
+    "params": {
+      "search": "remote work software developer productivity",
+      "per-page": 50,
+      "sort": "relevance_score:desc"
+    },
+    "http_status": 200,
+    "status": "SUCCESS",
+    "error": null,
+    "upstream_total_count": 37562,
+    "returned_count": 50,
+    "missing_abstract_count": 7,
+    "response_saved_at_utc": "2026-09-09T14:04:28.868036+00:00",
+    "timestamp_basis": "raw response file modification time immediately after curl save",
+    "raw_path": "raw/Q06-diagnostic.json",
+    "sha256": "49136d77e9e340fcd149ed7fac03c27f47cdade1c62bc44f8b4f94e431081ef5"
+  }
+]

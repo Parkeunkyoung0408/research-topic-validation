@@ -4,6 +4,7 @@ import type {
 } from "@research-topic-validation/contracts";
 import { AnnotationControls } from "../components/AnnotationControls";
 import { getStatusLabel } from "../components/StatusBadge";
+import { localizeSystemText } from "../labels";
 
 type EvidenceQualityViewProps = {
   items: EvidenceQualityItem[];
@@ -22,21 +23,29 @@ export function EvidenceQualityView({
         <section className="observability-card" key={item.gapEvidenceId}>
           <div className="evidence-compare">
             <div>
-              <h3>AI Evidence Claim</h3>
-              <p>{item.aiEvidenceClaim ?? "AI claim 저장 없음"}</p>
+              <h3>자동 분류 요약</h3>
+              <p>
+                {localizeSystemText(
+                  item.aiEvidenceClaim ?? "자동 분류 기록 없음",
+                )}
+              </p>
             </div>
             <div>
-              <h3>Original Evidence Passage</h3>
-              <p>{item.originalEvidencePassage || "원문 passage 없음"}</p>
+              <h3>수집된 초록 또는 제목</h3>
+              <p>{item.originalEvidencePassage || "수집된 문장 없음"}</p>
             </div>
           </div>
           <div className="meta">
             <span>{item.paper.title}</span>
             <span>{item.source}</span>
-            <span>Citation: {getStatusLabel(item.citationMatch)}</span>
-            <span>Grounding: {getStatusLabel(item.groundingStatus)}</span>
-            <span>Unsupported: {getStatusLabel(item.unsupportedClaim)}</span>
-            <span>Relation: {item.evidenceRelation}</span>
+            <span>인용 일치 여부: {getStatusLabel(item.citationMatch)}</span>
+            <span>
+              주장과 원문 일치 여부: {getStatusLabel(item.groundingStatus)}
+            </span>
+            <span>
+              근거 없는 주장 여부: {getStatusLabel(item.unsupportedClaim)}
+            </span>
+            <span>근거 역할: {localizeSystemText(item.evidenceRelation)}</span>
           </div>
           <AnnotationControls
             gapEvidenceId={item.gapEvidenceId}
@@ -47,7 +56,7 @@ export function EvidenceQualityView({
       ))}
       {!items.length ? (
         <div className="empty">
-          Evidence 데이터가 없습니다. 먼저 검증을 실행하세요.
+          논문 근거가 없습니다. 먼저 검증을 실행하세요.
         </div>
       ) : null}
     </div>
